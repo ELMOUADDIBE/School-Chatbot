@@ -60,7 +60,7 @@ public class Controllers {
                 "\n" +
                 "\uD83E\uDD16 Posez votre question maintenant et commençons notre voyage d'apprentissage ensemble!");
 
-        chatService = new ChatService(this::onChatbotResponse, API_KEY, "src/main/resources/data/data.txt", "http://143.47.45.201:8000/", "data");
+        chatService = new ChatService(this::onChatbotResponse, API_KEY, "src/main/resources/data/data.txt", "http://localhost:8000/", "data");
 
     }
 
