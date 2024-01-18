@@ -12,8 +12,8 @@ public class AppConsole {
 //        IChat iChat = new IChat();
 //        iChat.setDebut("Greetings, ENSET Mohammedia community member. As your dedicated multilingual assistant.I dont give any answer beyond Enset Mohammedia. \\n\\n\"");
 //        iChat.setFin("Based on the relevant details and school-specific context, here's the best and direct response:\n{{information}}\n\n");
-//        iChat.setAPI("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");
-//        ConversationalRetrievalChain chain = iChat.setChat("src/main/resources/data/data.txt", "http://143.47.45.201:8000/", "data");
+//        iChat.setAPI("demo");
+//        ConversationalRetrievalChain chain = iChat.setChat("src/main/resources/data/data.txt", "http://localhost:8000/", "data");
 
 //        Scanner scanner = new Scanner(System.in);
 //        while (true) {
