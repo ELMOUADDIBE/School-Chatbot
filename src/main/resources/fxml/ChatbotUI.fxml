@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="titleBar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="728.0" styleClass="interface" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.enset.projet.presentation.Controllers">
+   <children>
+      <Button contentDisplay="TOP" layoutX="682.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="29.0" prefWidth="35.0">
+         <graphic>
+            <ImageView>
+               <Image url="/img/close.png" />
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button alignment="TOP_LEFT" layoutX="651.0" layoutY="7.0" mnemonicParsing="false" onAction="#handleMinimize" prefHeight="37.0" prefWidth="29.0" textAlignment="CENTER">
+         <graphic>
+            <ImageView>
+               <Image url="/img/mini.png" />
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="45.0" fitWidth="388.0" layoutX="16.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+         <image>
+            <Image url="/img/ENSET.png" />
+         </image>
+      </ImageView>
+      <ListView fx:id="messageListView" layoutX="-8.0" layoutY="49.0" prefHeight="463.0" prefWidth="742.0" styleClass="list-view" />
+      <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="359.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+         <image>
+            <Image url="/img/interface-bot.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="15.0" layoutY="520.0" prefHeight="46.0" prefWidth="654.0" styleClass="hbox">
+         <children>
+            <TextField fx:id="inputField" onAction="#handleSendButtonAction" prefHeight="29.0" prefWidth="602.0" promptText="Entrez votre message ici" styleClass="input-field" HBox.hgrow="ALWAYS" />
+            <Button mnemonicParsing="false" onAction="#handleSendButtonAction" prefHeight="38.0" prefWidth="40.0" styleClass="send-button">
+               <graphic>
+                  <ImageView>
+                     <Image url="/img/send.png" />
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+      <Button layoutX="673.0" layoutY="524.0" mnemonicParsing="false" onAction="#handleClear" prefHeight="37.0" prefWidth="35.0" styleClass="delete-button">
+         <graphic>
+            <ImageView>
+               <Image url="/img/delete.png" />
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

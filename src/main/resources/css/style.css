@@ -1,0 +1,117 @@
+/* Chat ListView Styles */
+.list-view {
+    -fx-background-insets: 0;
+    -fx-background-color: none;
+    -fx-border-color: transparent;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 5, 0.0, 0, 1);
+}
+
+.list-cell:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.list-view .list-cell:filled:selected, .list-view .list-cell:filled:selected:hover {
+    -fx-background-color: white;
+    -fx-text-fill: -fx-text-base-color;
+}
+
+.list-view .list-cell:filled:selected:focused, .list-view .list-cell:filled:selected:focused:hover {
+    -fx-background-color: white;
+    -fx-text-fill: -fx-text-base-color;
+}
+
+.list-view:focused .list-cell:filled:focused:selected, .list-view:focused .list-cell:filled:focused:selected:hover {
+    -fx-background-color: white;
+    -fx-text-fill: -fx-text-base-color;
+}
+
+/* Chat Bubbles Styles */
+.user-message, .bot-message {
+    -fx-background-radius: 16;
+    -fx-text-fill: black;
+    -fx-padding: 8 10;
+    -fx-wrap-text: true;
+    -fx-background-insets: 0;
+    -fx-max-width: 570;
+}
+
+.user-message {
+    -fx-background-color: linear-gradient(to right, #ADD8E6, #87CEEB);
+}
+
+.bot-message {
+    -fx-background-color: linear-gradient(to right, rgba(229, 226, 226, 0.93), rgba(231, 222, 222, 0.87));
+}
+
+/* Main Chat Area Styles */
+.message-list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-selection-bar: transparent;
+    -fx-selection-bar-non-focused: transparent;
+}
+
+/* Interface Styles */
+.interface {
+    -fx-background-color: linear-gradient(to right, #024f82, #004d85);
+    -fx-border-radius: 23;
+    -fx-background-radius: 23;
+}
+
+/* HBox Styles */
+.hbox {
+    -fx-background-color: linear-gradient(to bottom, #ffffff 0%, #e7f0fc 100%);
+    -fx-background-radius: 38;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2;
+    -fx-border-radius: 38;
+    -fx-padding: 1;
+    -fx-alignment: center;
+    -fx-spacing: 2;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 5, 0.0, 0, 1);
+}
+
+.shadow {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 5, 0.0, 0, 1);
+}
+
+/* Input Field Styles */
+.input-field {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 1 0 1 12;
+}
+
+/* Send Button Styles */
+.send-button {
+    -fx-border-width: 0;
+    -fx-background-radius: 38;
+    -fx-background-color: white;
+    -fx-text-fill: #FFFFFF;
+    -fx-padding: 2 10;
+}
+
+/* Button Styles */
+.delete-button:hover {
+    -fx-background-color: linear-gradient(to left, #1b80f1, #029df5);
+    -fx-background-radius: 60;
+    -fx-border-radius: 60;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 3, 0.1, 0, 1);
+    -fx-border-width: 0;
+}
+
+.button {
+    -fx-background-radius: 5;
+    -fx-padding: 5 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 3, 0.1, 0, 1);
+    -fx-background-color: transparent;
+    -fx-content-display: center;
+}
+
+.button:pressed {
+    -fx-translate-y: 1px;
+    -fx-translate-x: 1px;
+}
