@@ -26,7 +26,7 @@ import java.io.IOException;
 public class Controllers {
     private static final String USER_ICON_PATH = "/img/user.png";
     private static final String BOT_ICON_PATH = "/img/icon.png";
-    private static final String API_KEY = "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";
+    private static final String API_KEY = "demo";
 
     @FXML
     private ListView<Message> messageListView;
