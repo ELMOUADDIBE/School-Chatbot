@@ -2,6 +2,9 @@
 
 ## :book: Project Overview
 The School-Chatbot-Assistant is a Java-based chatbot designed for ENSET Mohammedia. This project serves as a platform to improve our Java and development skills, offering an interactive way to access school-related information. It's built with JavaFX for the interface, LangChain for language processing, and the OpenAI API for intelligent interactions.
+<p align="center">
+  <img src="https://github.com/ELMOUADDIBE/School-Chatbot/blob/main/src/main/resources/img/ENSET%20CHATBOT.png?raw=true" alt="image projet" width="500">
+</p>
 
 ## :sparkles: Features
 - :speech_balloon: **Personalized Responses:** Tailored information based on user queries.
@@ -15,6 +18,9 @@ The School-Chatbot-Assistant is a Java-based chatbot designed for ENSET Mohammed
 - :brain: **LangChain:** Enhancing natural language processing.
 - :robot: **OpenAI API:** Advanced AI-based language understanding.
 - :cloud: **ChromaDB & Oracle Cloud:** For efficient data management.
+<p align="center">
+  <img src="https://github.com/ELMOUADDIBE/School-Chatbot/blob/main/src/main/resources/img/Conception%20de%20l'Architecture.png?raw=true" alt="image projet" width="750">
+</p>
 
 ## :gear: Installation and Usage
 See the `installation.md` file for setup and running instructions.
